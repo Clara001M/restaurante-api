@@ -1,3 +1,5 @@
 node_modules
 
+database.sqlite
+yarn-erro.log
 yarn.lock
