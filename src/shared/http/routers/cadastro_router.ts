@@ -1,5 +1,5 @@
 import { type Router } from 'express'
-import { CandidatoController } from '../controllers/cadastro_controller'
+import { CandidatoController } from '../../../controllers/cadastro_controller'
 
 const candidatoController = new CandidatoController()
 

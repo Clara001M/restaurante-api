@@ -1,5 +1,5 @@
 import { type Router } from 'express'
-import { UsuarioController } from '../controllers/usuario_controller'
+import { UsuarioController } from '../../../controllers/usuario_controller'
 
 const usuarioController = new UsuarioController()
 
