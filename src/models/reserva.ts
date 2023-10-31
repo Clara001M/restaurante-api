@@ -16,7 +16,7 @@ export class Reserva {
   @Column({ name: 'nm_completo' })
   nomeCompleto: string
 
-  @Column({ name: 'dt_hr', type: 'timestamp' })
+  @Column({ name: 'dt_hr' })
   dataHora: Date
 
   @Column({ name: 'número_pessoas' })
