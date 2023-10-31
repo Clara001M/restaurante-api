@@ -1,11 +1,11 @@
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm'
 
-@Entity('restaurantes')
+@Entity('restaurante')
 export class Restaurante{
   @PrimaryGeneratedColumn()
   id: number
 
-  @Column({ name: 'Nome_completo' })
+  @Column({ name: 'nome' })
   nomeCompleto: string
 
   @Column({ unique: true })
@@ -14,13 +14,19 @@ export class Restaurante{
   @Column({ unique: true })
   email: string
 
-  @Column({ name: 'Contato' })
+  @Column({ name: 'senha' })
+  senha: string
+
+  @Column({ name: 'contato' })
   contato: string
 
-  @Column({ name: 'Endereco' })
+  @Column({ name: 'endereco' })
   logradouro: string
+
+  @Column({ name: 'bairro' })
   bairro: string
+
+  @Column({ name: 'cidade' })
   cidade: string
-  cep: string
 }
 
