@@ -8,5 +8,5 @@ export class AddReservaService {
             const reserva = reservaRepository.create({ nomeCompleto, dataHora, numeroPessoas, whatsapp, ocasiaoEspecial })
             const reservaDB = await reservaRepository.save(reserva)
             return reservaDB
-        }
+    }
 }
